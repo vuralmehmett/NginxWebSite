@@ -1,0 +1,8 @@
+version: '2'
+services:
+    test_static_web_server:
+        image: vuralmehmett/rpi-nginx:1.0
+        build: ./            
+        container_name: rpi-nginx-container
+        ports:
+            - "7001:80"
